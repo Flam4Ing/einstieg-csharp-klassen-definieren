@@ -5,6 +5,9 @@ namespace KlassenDefinieren
 {
     class Program
     {
+        // Übung:
+        //  - aktuelle Geschwindigkeit soll ausgegeben vor und nach der Beschleunigung
+
         static void Main(string[] args)
         {
             Auto meinAuto = new Auto();

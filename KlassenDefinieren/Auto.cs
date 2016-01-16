@@ -2,6 +2,11 @@
 
 namespace KlassenDefinieren
 {
+    // Übung:
+    //  - aktuelle Geschwindigkeit speichern - DATEN!
+    //  - BeschleunigeAuf100KmH erhöht die Geschwindigkeit -> VERHALTEN!
+    //  - aktuelle Geschwindigkeit kann ausgegeben werden -> VERHALTEN!
+
     public class Auto
     {
         public string marke;
