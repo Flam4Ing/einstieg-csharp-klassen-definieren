@@ -4,24 +4,34 @@ namespace KlassenDefinieren
 {
     public class Auto
     {
-        private string marke;
-        public int alterInJahren;
         private int aktuelleGeschwindigkeit;
 
         public Auto(string autoMarke)
         {
-            if (autoMarke == "Porsche")
-            {
-                marke = autoMarke;
-            }
-            else
-            {
-                marke = "Nicht unterstützt!";
-            }
-
-            alterInJahren = 0;
+            Marke = autoMarke;
+            AlterInJahren = 0;
             aktuelleGeschwindigkeit = 0;
         }
+
+        private string marke;
+
+        public string Marke
+        {
+            get { return marke; }
+            set
+            {
+                if (value == "Porsche")
+                {
+                    marke = value;
+                }
+                else
+                {
+                    marke = "Nicht unterstützt!";
+                }
+            }
+        }
+
+        public int AlterInJahren { get; set; }
 
         public void BeschleunigeAuf100KmH()
         {
@@ -29,11 +39,11 @@ namespace KlassenDefinieren
 
             if (IstSchnell())
             {
-                Console.WriteLine("Der {0} hat schnell beschleunigt! Yeah!", marke);
+                Console.WriteLine("Der {0} hat schnell beschleunigt! Yeah!", Marke);
             }
             else
             {
-                Console.WriteLine("Der {0} hat normal beschleunigt!", marke);
+                Console.WriteLine("Der {0} hat normal beschleunigt!", Marke);
             }
         }
 
@@ -44,7 +54,7 @@ namespace KlassenDefinieren
 
         private bool IstSchnell()
         {
-            if (marke == "Porsche")
+            if (Marke == "Porsche")
             {
                 return true;
             }
