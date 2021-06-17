@@ -2,9 +2,9 @@
 
 namespace KlassenDefinieren
 {
-    public class Auto
+    public class Auto                        // eigene Klasse, Zugriffsmodifizierer: public, Klasse beginnt mit Großbuschstaben
     {
-        private int aktuelleGeschwindigkeit;
+        private int aktuelleGeschwindigkeit;     
 
         public Auto(string autoMarke)
         {
@@ -13,9 +13,9 @@ namespace KlassenDefinieren
             aktuelleGeschwindigkeit = 0;
         }
 
-        private string marke;
+        private string marke;   //Attribut
 
-        public string Marke
+        public string Marke      //Eigenschaft = Property
         {
             get { return marke; }
             set
@@ -30,10 +30,10 @@ namespace KlassenDefinieren
                 }
             }
         }
-
+            
         public int AlterInJahren { get; set; }
 
-        public void BeschleunigeAuf100KmH()
+        public void BeschleunigeAuf100KmH()       // Methoden
         {
             aktuelleGeschwindigkeit = 100;
 
@@ -60,6 +60,15 @@ namespace KlassenDefinieren
             }
 
             return false;
+        }
+    }
+
+    public class AUTO
+    {
+
+        public void Bremsen()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

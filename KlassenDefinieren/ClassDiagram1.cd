@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="BEZIEHUNGEN (EN: Assoziation) :">
+    <Position X="0.813" Y="1.177" Height="0.75" Width="2.398" />
+  </Comment>
+  <Comment CommentText="                                                      UML-KLASSENDIAGRAMM &#xD;&#xA;                                                      _____________________________">
+    <Position X="2.927" Y="0.5" Height="0.479" Width="5.19" />
+  </Comment>
+  <Class Name="KlassenDefinieren.AUTO">
+    <Position X="1.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Auto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KlassenDefinieren.HERSTELLER">
+    <Position X="6" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>HERSTELLER.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AUTO" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="KlassenDefinieren.MITARBEITER">
+    <Position X="3.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>MITARBEITER.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AUTO" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
